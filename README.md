@@ -266,6 +266,6 @@ Now we can generate key for any name for several seconds. Keygen sources and bin
 P.S.: The main difficulty is to guess how author generate `char needed_table[6*676]`, 
 to make this solution impossible author should customize way in which `char needed_table[6*676]` generated to make guessing impossible and leave for us only brute force of `char needed_table[4056]`.
 
-**Valid `NAME:KEY` pairs examples:**:
+**Valid `NAME:KEY` pairs examples**:
 * bigben:4aWfjhuWTgv6NSM2
 * impossible:tbxCCxODKA5M7XWB
