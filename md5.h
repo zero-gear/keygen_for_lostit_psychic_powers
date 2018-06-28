@@ -1,0 +1,1 @@
+void MD5_and_XOR(char hash_buffer[16]);

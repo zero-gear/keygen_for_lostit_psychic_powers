@@ -1,0 +1,1 @@
+void init_N_hash(const char * name, unsigned char name_len, char dest_hash[0x10]);

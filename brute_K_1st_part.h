@@ -1,0 +1,1 @@
+void get_needed_table(char master_table[4056], char needed_table[4056]);
