@@ -173,10 +173,14 @@ void brute_key_quarter(const char * in_3chars, char * out_4chars) {
 **2ND CHECK**:  
 we have 2nd 8-bytes part of `KEY`, we should retrieve 1st 8-bytes part of `KEY` and pass this check.
 Lets consider all possible variants:
-1. Direct brute of key. Unfortunatly brute time is unacceptable big. Using [keygen based on brute](https://github.com/smart-rabbit/keygen_for_lostit_brute-strength),
+
+**1 way**
+
+Direct brute of key. Unfortunatly brute time is unacceptable big. Using [keygen based on brute](https://github.com/smart-rabbit/keygen_for_lostit_brute-strength),
 which brute threads quantity is equal to quantity of cores on your PC - i waste my 8 cores power for several days. 
 Initial sober view should prevent me from such mistake. Input range is too wide,  MD5 hashes numerous calculations loop is not so fast.
-2. Before consider alternative, lets make assumption on how keygenMe author generate `KEY[0:8]`.
+**2 way**
+Before consider alternative, lets make assumption on how keygenMe author generate `KEY[0:8]`.
 Second check is based on `char master_table[4056]`.
 This table is indexed using `NAME` first two chars
 `idx = 6 * ((ord(name[0]) - 0x60) * (ord(name[1]) - 0x60) - 1)`.
@@ -192,7 +196,7 @@ char master_table[6*676] = {.......} // contains corresponding variants of `K_ha
 
 From now we can try to brute `char needed_table[6* 676]` as suggested [here](https://forum.reverse4you.org/showthread.php?t=2917&p=14049&viewfull=1#post14049),
 or use psychic powers and try guess how keygenMe author generate `char needed_table[6*676]` as suggested [here](https://forum.tuts4you.com/topic/37904-keygenme-01-psychic-powers-or-brute-strength-your-choice/).
-Lets use 2nd way. We make assumption that was used MSVS CRT `rand()` function to fill `char needed_table[6*676]`.
+Lets use 2nd. We make assumption that was used MSVS CRT `rand()` function to fill `char needed_table[6*676]`.
 ```C
 srand(unknown_seed);
 char  needed_table[6*676];
