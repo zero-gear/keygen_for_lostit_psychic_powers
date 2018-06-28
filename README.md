@@ -133,7 +133,7 @@ K_hash_2[0:6] == master_table[idx:idx+6]
 
 ### Data dependencies
 below figure clarify relationship beetween name, key, different hashes and checks. For better understanding what depends on what.
-![Image of Yaktocat](data_dependencies.png)
+![Image of Yaktocat](https://github.com/smart-rabbit/keygen_for_lostit_psychic_powers/blob/master/other/data_dependencies.PNG)
 
 ### Checks bypass
 **1ST CHECK**:  
