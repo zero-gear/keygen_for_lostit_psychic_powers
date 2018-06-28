@@ -252,6 +252,7 @@ int main() {
 		);
 	if (unknown_seed == UINT_MAX) {
 		printf("Your assumption is wrong. Try `rand()` from another library.");
+		return 1;
 	} else {
 		printf("Searched seed: 0x%08x\n", unknown_seed);
 	}
