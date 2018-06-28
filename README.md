@@ -176,7 +176,7 @@ Lets consider all possible variants:
 
 **1 way: Direct brute of key**
 
-Unfortunatly brute time is unacceptable big. Using [keygen based on brute](https://github.com/smart-rabbit/keygen_for_lostit_brute-strength),
+Unfortunatly brute time is unacceptable huge. Using [keygen based on brute](https://github.com/smart-rabbit/keygen_for_lostit_brute-strength),
 which brute threads quantity is equal to quantity of cores on your PC - i waste my 8 cores power for several days. 
 Initial sober view should prevent me from such mistake. Input range is too wide,  MD5 hashes numerous calculations loop is not so fast.
 
