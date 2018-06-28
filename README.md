@@ -173,7 +173,7 @@ void brute_key_quarter(const char * in_3chars, char * out_4chars) {
 **2ND CHECK**:  
 we have 2nd 8-bytes part of `KEY`, we should retrieve 1st 8-bytes part of `KEY` and pass this check.
 Lets consider all possible variants:
-1. Direct brute of key. Unfortunatly brute time is unacceptable big. Using [keygen based on brute](https://forum.tuts4you.com/topic/37904-keygenme-01-psychic-powers-or-brute-strength-your-choice),
+1. Direct brute of key. Unfortunatly brute time is unacceptable big. Using [keygen based on brute](https://github.com/smart-rabbit/keygen_for_lostit_brute-strength),
 which brute threads quantity is equal to quantity of cores on your PC - i waste my 8 cores power for several days. 
 Initial sober view should prevent me from such mistake. Input range is too wide,  MD5 hashes numerous calculations loop is not so fast.
 2. Before consider alternative, lets make assumption on how keygenMe author generate `KEY[0:8]`.
