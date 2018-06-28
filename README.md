@@ -179,7 +179,9 @@ Lets consider all possible variants:
 Direct brute of key. Unfortunatly brute time is unacceptable big. Using [keygen based on brute](https://github.com/smart-rabbit/keygen_for_lostit_brute-strength),
 which brute threads quantity is equal to quantity of cores on your PC - i waste my 8 cores power for several days. 
 Initial sober view should prevent me from such mistake. Input range is too wide,  MD5 hashes numerous calculations loop is not so fast.
+
 **2 way**
+
 Before consider alternative, lets make assumption on how keygenMe author generate `KEY[0:8]`.
 Second check is based on `char master_table[4056]`.
 This table is indexed using `NAME` first two chars
