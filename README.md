@@ -196,7 +196,7 @@ char needed_table[6*676] = {.......} // contains variants of `K_hash_1[0:6]`
 char master_table[6*676] = {.......} // contains corresponding variants of `K_hash_2[0:6]`
 ```
 
-From now we can try to brute `char needed_table[6* 676]` as suggested [here](https://forum.reverse4you.org/showthread.php?t=2917&p=14049&viewfull=1#post14049),
+From now we can try to brute `char needed_table[6*676]` as suggested [here](https://forum.reverse4you.org/showthread.php?t=2917&p=14049&viewfull=1#post14049),
 or use psychic powers and try guess how keygenMe author generate `char needed_table[6*676]` as suggested [here](https://forum.tuts4you.com/topic/37904-keygenme-01-psychic-powers-or-brute-strength-your-choice/?do=findComment&comment=191830).
 Lets use 2nd. We make assumption that was used MSVS CRT `rand()` function to fill `char needed_table[6*676]`.
 ```C
